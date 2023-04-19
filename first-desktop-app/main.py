@@ -1,3 +1,10 @@
+#
+#
+# Link do mini kursu -> https://realpython.com/python-gui-tkinter/
+#
+#
+
+
 import tkinter as tk
 
 window = tk.Tk()
