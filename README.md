@@ -2,8 +2,8 @@
 Repository for python projects 
 
 # Contents
-[Python desktop start](desktop-start)
-[Password Generator](password-generator)
+[Python desktop start](#desktop-start)
+[Password Generator](#password-generator)
 
 ## desktop-start
 Folder with first app with gui in python
