@@ -1,8 +1,12 @@
-# python-projects
+# Introduction
 Repository for python projects 
 
-## python-desktop-start
+# Contents
+[Python desktop start](desktop-start)
+[Password Generator](password-generator)
+
+## desktop-start
 Folder with first app with gui in python
 
-## python-password-generator
+## password-generator
 Project with creating password generator in console.
