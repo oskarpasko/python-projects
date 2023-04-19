@@ -2,11 +2,17 @@
 Repository for python projects 
 
 # Contents
-1. [Python desktop start](#desktop-start)
+1. [Desktop start](#first-desktop-start)
 2. [Password Generator](#password-generator)
+3. [Simple Form](#simple-form)
+4. [Console Notes App](#console-notes-app)
 
-## desktop-start
+## first-desktop-start
 Folder with first app with gui in python
 
 ## password-generator
 Project with creating password generator in console.
+
+## simple-form
+
+## console-notes-app
