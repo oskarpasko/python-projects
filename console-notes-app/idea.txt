@@ -1,0 +1,22 @@
+Projekt zapisujący oraz usuwający notatki.
+(Dodatkowo moze zrobić aplikację dwujęzyczną?)
+(Dodać mozliwosc ustawiania kolorów wyświetlania?)
+
+Docelowe glówne menu
+
+1. Nowa notatka
+2. Czytaj notatki
+3. Usuń notatki
+4. Język
+5. Wyjdź
+
+1. Tworzymy nowy plik z notaką podaną przez uzytkownika
+(Nazwa pliku będzie tworzona z pomoca tematu notatki)
+2. - Będziemy wyświetlać wszystkie mozliwe notatki po tematach do odczytania np:
+    1. Notatka 1
+    2. Notatka 2
+    3. Notatka3
+3. - Usuwamy plik tesktowy wybrany przez usera
+4. - Funkcją która będzie zmieniać w jakim języku będą wyświetlane polecenia / komunikaty
+5. - Konfiguracja - dodanie kolorów wyświetlania
+6. - Wyłączamy aplikację
