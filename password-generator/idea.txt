@@ -1,0 +1,49 @@
+16 znaków -> (duze litery, małe litery, cyfry, znaki specjalne)
+
+cyfry - 5
+znaki - 4
+małe litery - 4
+duze litery - 3
+
+Do tablicy 16-elementowej wstawiamy wylosowane "znaki"
+Następnie tasujemy wszystkie elementy w tablicy
+    Mozliwości tasowania:
+    1. iteracja (1 element -> 0 w lewo, 15 w prawo)
+    2. iteracja (2 element -> 1 w lewo, 14 w prawo)
+    3. iteracja (3 element -> 2 w lewo, 13 w prawo)
+    n. iteracja (n element -> n-1 w lewo, tab-n w prawo)
+
+Pomysł tasowania:
+randomowa liczba z przedziału <0, 100>
+if(num % 2 == 0) -> przesuń w lewo
+else -> przesuń w prawo
+
+for(x=1;<=16;x++)
+{
+    temp = tab[x-1]
+
+    if(num % 2 == 0)
+    {
+        
+        tab[x-1] = tab[x-(x-1)]
+        tab[x-(x-1)] = temp
+    }
+    else{
+        tab[x-1] = tab[tab.length()-x]
+        tab[tab.length()-x] = temp
+    }
+}
+
+Wypisanie hasła dla uzytkownika
+
+User powinien miec mozliwosc wybrania czy chce wylosowac nowe haslo
+
+W takim wypadku nalezy zrobić menu
+
+1. Losuj
+2. Info
+3. Wyjdź
+
+1. - Losuje hasło oraz na końcu pyta czy user chce wylosować jeszcze raz jeśli tak to losowanie się powtarza, jeśli nie to wracamy do menu
+2. - Wypisujemy informacje na temat programu, jak działa oraz ewentualne copyright i licencje itp
+3. - Kończymy działanie programu
