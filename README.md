@@ -2,7 +2,7 @@
 Repository for python projects 
 
 # Contents
-[Python desktop start](#desktop-start) </br>
+1. [Python desktop start](#desktop-start) </br>
 [Password Generator](#password-generator)
 
 ## desktop-start
