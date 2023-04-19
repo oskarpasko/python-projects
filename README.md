@@ -1,7 +1,7 @@
 # Introduction
 Repository for python projects 
 
-# Contents
+##### Contents
 [Python desktop start](#desktop-start)
 [Password Generator](#password-generator)
 
