@@ -1,0 +1,22 @@
+Mozliwość rejestracji i logowania uzytkownika
+Z wykorzystaniem plików JSON do przechowywania danych
+
+Menu:
+
+1. Zaloguj
+2. Zarejestruj
+3. Wyjdź
+
+User wpisuje login, email, haslo i potwierdzenie hasla do rejestracji
+
+Jeśli login lub email znajduje się w bazie to wypisuje błąd
+
+Jeśli hasła są róne to tez wypisujemy błąd
+
+Hasło musi zawierać conajmniej 1 duzą litere, 1 mała, cyfre i znak specjalny
+w przeciwnym wypadku wywalamy błąd
+
+
+Podczas logowania user podaje login lub email oraz haslo 
+Jeśli podanego uzytkownika nie ma w bazie to wywalamy błąd w przeciwnym wypadku
+Przechodzimy do "strony głównej" gdzie wypisujemy wszystkie jego dane
