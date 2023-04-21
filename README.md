@@ -14,5 +14,7 @@ Folder with first app with gui in python
 Project with creating password generator in console.
 
 ## simple-form
+Simpe app to register and login user to database
 
 ## console-notes-app
+Project with NotesApp to create, delete and check our notes
