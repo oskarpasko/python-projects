@@ -14,6 +14,7 @@ Folder with first app with gui in python </br>
 
 ### Project's Details
 * Start Project: -----
+* Last Update: -----
 * Version: Alpha 0.0.0
 
 # password-generator
@@ -22,6 +23,7 @@ Project with creating password generator in console.</br>
 
 ### Project's Details
 * Start Project: -----
+* Last Update: -----
 * Version: Alpha 0.0.0
 
 # simple-form
@@ -30,6 +32,7 @@ Simpe app to register and login user to database</br>
 
 ### Project's Details
 * Start Project: -----
+* Last Update: -----
 * Version: Alpha 0.0.0
 
 # console-notes-app
@@ -38,6 +41,7 @@ Project with NotesApp to create, delete and check our notes</br>
 
 ### Project's Details
 * Start Project: -----
+* Last Update: -----
 * Version: Alpha 0.0.0
 
 # tic-tac-toe
@@ -46,4 +50,5 @@ Tic Tac Toe game. Player vs PC and Player vs Player.</br>
 
 ### Project's Details
 * Start Project: -----
+* Last Update: -----
 * Version: Alpha 0.0.0
