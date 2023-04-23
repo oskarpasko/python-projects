@@ -1,5 +1,5 @@
 # Introduction
-Repository for python projects 
+A repository containing projects of applications, games or algorithms created in Python.
 
 # Contents
 1. [Desktop start](#first-desktop-start)
