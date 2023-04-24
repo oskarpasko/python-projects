@@ -2,13 +2,15 @@ from src.menu import *
 
 print(f"{Colors.YELLOW}++++++++++ Console Notes App ++++++++++{Colors.END}")
 
+# main project's loop
 while (True):
-    menu(LANGUAGE)
+    menu(LANGUAGE) # printing menu with language's parametr
 
-    choice = input("->  ")
+    choice = input("->  ") # user's choice
 
+    # mechanism to manage choice for main menu
     match(choice):
-        case '4':
+        case '4': # case for lanugages
             print(f"{Colors.BLUE}1. Polski")
             print(f"2. English{Colors.END}")
             lang_choice = input("-> ")
