@@ -40,7 +40,7 @@ Simpe app to register and login user to database</br>
 Project with NotesApp to create, delete and check our notes</br>
 
 ### Project's Details
-* Start Project: -----
+* Start Project: 24.04.2023
 * Last Update: -----
 * Version: Alpha 0.0.0
 
