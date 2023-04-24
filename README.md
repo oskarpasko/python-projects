@@ -39,6 +39,13 @@ Simpe app to register and login user to database</br>
 ### Descritpion
 Project with NotesApp to create, delete and check our notes</br>
 
+### Errors
+
+* Error 12!
+```
+Nieprawidłowy wybór np. podczas wybierania opcji w menu.
+```
+
 ### Project's Details
 * Start Project: 24.04.2023r.
 * Last Update: 24.04.2023r.
