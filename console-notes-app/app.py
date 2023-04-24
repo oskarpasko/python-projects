@@ -21,3 +21,7 @@ while (True):
                     LANGUAGE = 'eng'
                 case _:
                     print(f"{Colors.RED}Error 12!{Colors.END}")
+        case '5':
+            exit()
+        case _:
+            print(f"{Colors.RED}Error 12!{Colors.END}")
