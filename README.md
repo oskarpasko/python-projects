@@ -45,6 +45,10 @@ Project with NotesApp to create, delete and check our notes</br>
 ```
 Nieprawidłowy wybór np. podczas wybierania opcji w menu.
 ```
+* Error 17!
+```
+Plik o podanej nazwie już istnieje w zapisanych plikach. Usuń plik o tej nazwie lub zmień nazwę pliku, który chcesz stowrzyć.
+```
 
 ### Project's Details
 * Start Project: 24.04.2023r.
