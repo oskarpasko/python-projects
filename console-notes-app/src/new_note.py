@@ -1,5 +1,6 @@
 from app import *
 from menu import *
+from settings import *
 import os
 
 def new_note():
@@ -16,7 +17,7 @@ def new_note():
         f=open(f"{rel_directory}/notes/{file}.txt","x")
     except FileExistsError:
         # if file exists we write error
-        print("Error 17!")
+        print(f"{Colors.RED}Error 17!{Colors.END}")
     else:
         # we ask to write some note for user and then we save file
         write_file(LANGUAGE)
