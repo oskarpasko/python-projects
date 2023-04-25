@@ -50,6 +50,11 @@ Nieprawidłowy wybór np. podczas wybierania opcji w menu.
 Plik o podanej nazwie już istnieje w zapisanych plikach. Usuń plik o tej nazwie lub zmień nazwę pliku, który chcesz stowrzyć.
 ```
 
+* Error 17!
+```
+Podany plik nie istnieje.
+```
+
 ### Project's Details
 * Start Project: 24.04.2023r.
 * Last Update: 24.04.2023r.
