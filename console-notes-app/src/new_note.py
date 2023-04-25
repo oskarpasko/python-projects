@@ -13,7 +13,7 @@ def new_note():
     # check if file exists
     try:
         # we are creating file
-        f=open(f"{rel_directory}/console-notes-app/notes/{file}.txt","x")
+        f=open(f"{rel_directory}/notes/{file}.txt","x")
     except FileExistsError:
         # if file exists we write error
         print("Error 17!")
