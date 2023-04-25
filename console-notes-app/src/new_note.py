@@ -1,5 +1,5 @@
+from app import *
 from menu import *
-from .. import app 
 import os
 
 def new_note():
@@ -18,6 +18,6 @@ def new_note():
         main = input(" -> ")
         f.write(main)
 
-        app.app()
 
-new_note()
+if __name__ == '__main__':
+    new_note()

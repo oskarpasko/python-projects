@@ -1,16 +1,20 @@
-from src.menu import *
+from menu import *
+from new_note import *
 
 def app():
     print(f"{Colors.YELLOW}++++++++++ Console Notes App ++++++++++{Colors.END}")
 
     # main project's loop
     while (True):
+        global LANGUAGE
         menu(LANGUAGE) # printing menu with language's parametr
 
         choice = input("->  ") # user's choice
 
         # mechanism to manage choice for main menu
         match(choice):
+            case '1':
+                new_note()
             case '4': # case for lanugages
                 print(f"{Colors.BLUE}1. Polski")
                 print(f"2. English{Colors.END}")
