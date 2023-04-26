@@ -44,4 +44,33 @@ def _write_filename_pl():
 def _write_filename_eng():
     print(f"{Colors.CYAN}Write Your note: {Colors.END}")
 
+def file_saved(lang):
+    if(lang == 'pl'): file_saved_pl()
+    if(lang == 'eng'): file_saved_eng()
+
+def file_saved_pl():
+    print(f"{Colors.CYAN}Zapisano notatkę:  {Colors.END}")
+
+def file_saved_eng():
+    print(f"{Colors.CYAN}Note was saved:  {Colors.END}")
+
+def file_deleted(lang):
+    if(lang == 'pl'): file_deleted_pl()
+    if(lang == 'eng'): file_deleted_eng()
+
+def file_deleted_pl():
+    print(f"{Colors.CYAN}Usunięto notatkę:  {Colors.END}")
+
+def file_deleted_eng():
+    print(f"{Colors.CYAN}Note was deleted:  {Colors.END}")
+
+def file_to_delete(lang):
+    if(lang == 'pl'): file_to_delete_pl()
+    if(lang == 'eng'): file_to_delete_eng()
+
+def file_to_delete_pl():
+    print(f"{Colors.CYAN}Która notatkę chcesz usunąć:  {Colors.END}")
+
+def file_to_delete_eng():
+    print(f"{Colors.CYAN}Which note would You like to delete:  {Colors.END}")
     
