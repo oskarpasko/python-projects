@@ -1,6 +1,6 @@
-from app import *
 from menu import *
 from settings import *
+from switch import *
 import os
 
 def new_note():
@@ -23,6 +23,9 @@ def new_note():
         write_file(LANGUAGE)
         main = input(" -> ")
         f.write(main)
+        file_saved(LANGUAGE)
+
+        switch_to_app()
 
 
 if __name__ == '__main__':

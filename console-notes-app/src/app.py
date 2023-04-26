@@ -1,5 +1,6 @@
 from menu import *
 from new_note import *
+from delete import *
 
 def app():
     print(f"{Colors.YELLOW}++++++++++ Console Notes App ++++++++++{Colors.END}")
@@ -15,6 +16,8 @@ def app():
         match(choice):
             case '1':
                 new_note()
+            case '3':
+                delete_note()
             case '4': # case for lanugages
                 print(f"{Colors.BLUE}1. Polski")
                 print(f"2. English{Colors.END}")
