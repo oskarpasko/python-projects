@@ -43,6 +43,37 @@ while True:
         case '2':  # case to register user
             print(
                 f"{Colors.YELLOW}\n ---------- Register Page ---------- \n{Colors.END}")
+            
+            # get first name
+            first_name = input(f"{Colors.BLUE}Insert Your first name: {Colors.END}")
+
+            # get last name
+            last_name = input(f"{Colors.BLUE}Insert Your last name: {Colors.END}")
+
+            # get login
+            login = input(f"{Colors.BLUE}Insert Your login: {Colors.END}")
+
+            # get password
+            password = getpass(f"{Colors.BLUE}Insert Your password: {Colors.END}")
+
+            # repeat the password
+            r_password = getpass(f"{Colors.BLUE}Repeat Your password: {Colors.END}")
+
+            if password != r_password:
+                print(f"{Colors.RED}\nPasswords are not equal!{Colors.END}")
+            else:
+                # user's data
+                data = {'login': f'{login}',
+                        'password': f'{password}',
+                        'details': {
+                            'fname': f'{first_name}',
+                            'lname': f'{last_name}'
+                            }
+                        }
+                
+                # register new user
+                new_user = users.insert_one(data)
+
 
         case '3':  # case to exit from the program
             exit(f"{Colors.PURPLE}Bye, have a great time!{Colors.END}")
