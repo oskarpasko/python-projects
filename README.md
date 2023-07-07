@@ -7,6 +7,7 @@ A repository containing projects of applications, games or algorithms created in
 3. [Simple Form](#simple-form)
 4. [Console Notes App](#console-notes-app)
 5. [Tic Tac Toe Game](#tic-tac-toe)
+6. [Mango user managment](#mango-users)
 
 # first-desktop-start
 ### Descritpion
@@ -66,5 +67,14 @@ Tic Tac Toe game. Player vs PC and Player vs Player.</br>
 
 ### Project's Details
 * Start Project: -----
+* Last Update: -----
+* Version: Alpha 0.0.0
+
+# mango-users
+### Descritpion
+App to user's managment.
+
+### Project's Details
+* Start Project: 6 July 2023
 * Last Update: -----
 * Version: Alpha 0.0.0
