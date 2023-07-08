@@ -76,5 +76,5 @@ App to user's managment.
 
 ### Project's Details
 * Start Project: 6 July 2023
-* Last Update: -----
+* Last Update: 6 July 2023
 * Version: Alpha 0.0.0
