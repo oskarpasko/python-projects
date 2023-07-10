@@ -97,7 +97,7 @@ while True:
         choice = input()  # users choice
 
         match(choice):
-            case '1':
+            case '1': # Update user account
                 print(f"{Colors.YELLOW}\n ----- All Users ----- \n{Colors.END}")
                 write_users = users.find()
                 for user in write_users:
@@ -110,8 +110,10 @@ while True:
                     print(f"\n ------------------------------ \n")
             case '2':
                 print(f"{Colors.YELLOW}\n ----- Update User ----- \n{Colors.END}")
+                # get login which user we wanna change
                 user_to_change = input(f'{Colors.GREEN}Which user (login) You would like to change: {Colors.END}')
 
+                # menu
                 print(f'{Colors.GREEN}What You want to change?{Colors.END}')
                 print(f"{Colors.LIGHT_PURPLE}1. Login{Colors.END}")
                 print(f"{Colors.LIGHT_PURPLE}2. First name{Colors.END}")
@@ -119,19 +121,30 @@ while True:
                 choice = input()
 
                 match(choice):
-                    case '1':
+                    case '1': # change login
+                        # insert new login
                         login_to_change = input(f"{Colors.BLUE}Insert new login: {Colors.END}")
+                        # update login in database
                         users.update_one({'login': user_to_change},
                                          { "$set": { "login": login_to_change }})
-                    case '2':
+                    case '2': # change first name
+                        # insert new first name
                         fname_to_change = input(f"{Colors.BLUE}Insert new first name: {Colors.END}")
+                        # save user's details for later
                         details = users.find_one({'login': f'{user_to_change}'})['details']
-                        users.update_one({'login': user_to_change}, { "$set": { "details": {'fname': fname_to_change, 'lname': details['lname']}}})
-                    case '3':
+                        # update first name and add last name to query
+                        users.update_one({'login': user_to_change}, 
+                                         { "$set": { "details": {'fname': fname_to_change, 
+                                                                                            'lname': details['lname']}}})
+                    case '3': # chagne last name
+                        # insert last name
                         lname_to_change = input(f"{Colors.BLUE}Insert new last name: {Colors.END}")
+                        # save user's details for later
                         details = users.find_one({'login': f'{user_to_change}'})['details']
+                        # update last name and add first name to query
                         users.update_one({'login': user_to_change},
-                                         { "$set": { "details": {'fname': details['fname'], 'lname': lname_to_change} }})
+                                         { "$set": { "details": {'fname': details['fname'], 
+                                                                 'lname': lname_to_change} }})
             case '4':
                 exit()
             case _:
@@ -145,10 +158,12 @@ while True:
         choice = input()  # users choice
 
         match(choice):
-            case '1':
+            case '1':  # Update user account
                 print(f"{Colors.YELLOW}\n ----- Update Account ----- \n{Colors.END}")
+                # get logged user login
                 user_to_change = user['login']
 
+                # menu to choose
                 print(f'{Colors.GREEN}What You want to change?{Colors.END}')
                 print(f"{Colors.LIGHT_PURPLE}1. Login{Colors.END}")
                 print(f"{Colors.LIGHT_PURPLE}2. First name{Colors.END}")
@@ -156,20 +171,34 @@ while True:
                 choice = input()
 
                 match(choice):
-                    case '1':
+                    case '1': # change login
+                        # insert new login
                         login_to_change = input(f"{Colors.BLUE}Insert new login: {Colors.END}")
+                        # update login in database
                         users.update_one({'login': user_to_change},
                                          { "$set": { "login": login_to_change }})
+                        # exit from application cause user have to log in one more time
                         exit(f"{Colors.PURPLE}Login one more time!{Colors.END}")
-                    case '2':
+
+                    case '2': # change first name
+                        # insert new first name
                         fname_to_change = input(f"{Colors.BLUE}Insert new first name: {Colors.END}")
+                        # get user's details for later
                         details = users.find_one({'login': f'{user_to_change}'})['details']
-                        users.update_one({'login': user_to_change}, { "$set": { "details": {'fname': fname_to_change, 'lname': details['lname']}}})
-                    case '3':
+                        # update first name and add last name to query
+                        users.update_one({'login': user_to_change}, 
+                                         { "$set": { "details": {'fname': fname_to_change, 
+                                                                 'lname': details['lname']}}})
+                    
+                    case '3': # change last name
+                        # insert new last name
                         lname_to_change = input(f"{Colors.BLUE}Insert new last name: {Colors.END}")
+                        # get user's details for later
                         details = users.find_one({'login': f'{user_to_change}'})['details']
+                        # update last name and add first name to query
                         users.update_one({'login': user_to_change},
-                                         { "$set": { "details": {'fname': details['fname'], 'lname': lname_to_change} }})
+                                         { "$set": { "details": {'fname': details['fname'], 
+                                                                 'lname': lname_to_change} }})
             case '3':
                 exit()
             case _:
