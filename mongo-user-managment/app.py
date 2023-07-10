@@ -82,3 +82,8 @@ while True:
 user = users.find_one({'login': f'{login}', 'password': f'{password}'})
 details = user['details']
 print(f"{Colors.CYAN}\nWelcome back {details['fname']}!{Colors.END}")
+
+# add stuff to managment data
+# users should update own data or delete account
+# admin should update specific user, delete specific user and show all users 
+# add something simillar to logout, maybe exit or something like this 
