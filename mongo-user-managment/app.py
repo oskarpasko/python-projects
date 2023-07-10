@@ -11,9 +11,9 @@ users = db.user
 while True:
     # main menu
     print(f"{Colors.YELLOW}\n ---------- Main Page ---------- \n{Colors.END}")
-    print(f"{Colors.LIGHT_PURPLE}1. Login")
-    print(f"{Colors.LIGHT_PURPLE}2. Register")
-    print(f"{Colors.LIGHT_PURPLE}3. Exit")
+    print(f"{Colors.LIGHT_PURPLE}1. Login{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}2. Register{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}3. Exit{Colors.END}")
     choice = input()  # users choice
     match(choice):
         case '1':  # case to login user
@@ -68,7 +68,8 @@ while True:
                         'details': {
                             'fname': f'{first_name}',
                             'lname': f'{last_name}'
-                            }
+                            },
+                        'status': 'user',
                         }
                 
                 # register new user
@@ -83,7 +84,15 @@ user = users.find_one({'login': f'{login}', 'password': f'{password}'})
 details = user['details']
 print(f"{Colors.CYAN}\nWelcome back {details['fname']}!{Colors.END}")
 
+if user['status'] == 'admin':
+    print(f"{Colors.LIGHT_PURPLE}1. Show all users{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}2. Update user{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}3. Delete user{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}4. Exit{Colors.END}")
+else:
+    print(f"{Colors.LIGHT_PURPLE}1. Update account{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}2. Delete account{Colors.END}")
+    print(f"{Colors.LIGHT_PURPLE}3. Exit{Colors.END}")
+
+
 # add stuff to managment data
-# users should update own data or delete account
-# admin should update specific user, delete specific user and show all users 
-# add something simillar to logout, maybe exit or something like this 
