@@ -145,6 +145,31 @@ while True:
         choice = input()  # users choice
 
         match(choice):
+            case '1':
+                print(f"{Colors.YELLOW}\n ----- Update Account ----- \n{Colors.END}")
+                user_to_change = user['login']
+
+                print(f'{Colors.GREEN}What You want to change?{Colors.END}')
+                print(f"{Colors.LIGHT_PURPLE}1. Login{Colors.END}")
+                print(f"{Colors.LIGHT_PURPLE}2. First name{Colors.END}")
+                print(f"{Colors.LIGHT_PURPLE}3. Last Name{Colors.END}")
+                choice = input()
+
+                match(choice):
+                    case '1':
+                        login_to_change = input(f"{Colors.BLUE}Insert new login: {Colors.END}")
+                        users.update_one({'login': user_to_change},
+                                         { "$set": { "login": login_to_change }})
+                        exit(f"{Colors.PURPLE}Login one more time!{Colors.END}")
+                    case '2':
+                        fname_to_change = input(f"{Colors.BLUE}Insert new first name: {Colors.END}")
+                        details = users.find_one({'login': f'{user_to_change}'})['details']
+                        users.update_one({'login': user_to_change}, { "$set": { "details": {'fname': fname_to_change, 'lname': details['lname']}}})
+                    case '3':
+                        lname_to_change = input(f"{Colors.BLUE}Insert new last name: {Colors.END}")
+                        details = users.find_one({'login': f'{user_to_change}'})['details']
+                        users.update_one({'login': user_to_change},
+                                         { "$set": { "details": {'fname': details['fname'], 'lname': lname_to_change} }})
             case '3':
                 exit()
             case _:
