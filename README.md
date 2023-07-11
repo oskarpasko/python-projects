@@ -72,7 +72,9 @@ Tic Tac Toe game. Player vs PC and Player vs Player.</br>
 
 # mango-users
 ### Descritpion
-App to user's managment.
+App to user's managment. </br>
+The project is written in one file without separating functions specifically for testing purposes. </br>
+"What will it look like and how readable will the code be?"
 
 ### Project's Details
 * Start Project: 6 July 2023
