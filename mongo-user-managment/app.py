@@ -90,6 +90,9 @@ while True:
 
     # menu for admin user
     if user['status'] == 'admin':
+        #
+        # Admin panel
+        #        
         print(f"{Colors.LIGHT_PURPLE}1. Show all users{Colors.END}")
         print(f"{Colors.LIGHT_PURPLE}2. Update user{Colors.END}")
         print(f"{Colors.LIGHT_PURPLE}3. Delete user{Colors.END}")
@@ -150,7 +153,9 @@ while True:
             case _:
                 print(f"{Colors.RED}ERROR 12!{Colors.END}")
     else:
-        # menu for casual user
+        #
+        # User panel
+        #   
         print(f"{Colors.LIGHT_PURPLE}1. Update account{Colors.END}")
         print(f"{Colors.LIGHT_PURPLE}2. Delete account{Colors.END}")
         print(f"{Colors.LIGHT_PURPLE}3. Exit{Colors.END}")
@@ -199,6 +204,21 @@ while True:
                         users.update_one({'login': user_to_change},
                                          { "$set": { "details": {'fname': details['fname'], 
                                                                  'lname': lname_to_change} }})
+            case '2': # delete account
+                print(f"{Colors.YELLOW}\n ----- Delete Account ----- \n{Colors.END}")
+                print(f'{Colors.GREEN}To delete account insert Your password.{Colors.END}')
+
+                # get password to confirm deleting account
+                password_to_delete = getpass(" -> ")
+
+                # checking if password is correct
+                if password_to_delete == user['password']:
+                    # deleting account and exiting from aplication
+                    users.delete_one({'login': user['login']})
+                    exit(f"{Colors.PURPLE}Bye, have a great time!{Colors.END}")
+                else: 
+                    print(f"{Colors.RED}\nWrong password!{Colors.END}")
+
             case '3':
                 exit()
             case _:
