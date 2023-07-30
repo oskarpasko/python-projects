@@ -80,3 +80,8 @@ The project is written in one file without separating functions specifically for
 * Start Project: 6 July 2023
 * Last Update: 6 July 2023
 * Version: Alpha 0.0.0
+
+* ### Pokemon Quiz
+* Start Project: -----
+* Last Update: -----
+* Version: Alpha 0.0.0
