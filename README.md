@@ -81,7 +81,9 @@ The project is written in one file without separating functions specifically for
 * Last Update: 6 July 2023
 * Version: Alpha 0.0.0
 
-* ### Pokemon Quiz
+### Pokemon Quiz
+### Description
+Pokemon game as a desktop app with database.
 * Start Project: -----
 * Last Update: -----
 * Version: Alpha 0.0.0
