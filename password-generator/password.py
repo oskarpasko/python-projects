@@ -21,7 +21,6 @@ class Password:
             # Creating an array which will store our password
             password = []
 
-
             # Adding random digits to our password
             for _ in range(self.lower):
                 password.append(chr(random.randint(97, 122)))
@@ -31,7 +30,9 @@ class Password:
                 password.append(chr(random.randint(48, 57)))
             for _ in range (self.special):
                 password.append(chr(random.randint(33, 47)))
-                
+
+            # Code to shuffle chars
+            random.shuffle(password)
 
             # Printing password as a string    
             ready_password = ''
