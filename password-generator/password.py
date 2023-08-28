@@ -1,4 +1,5 @@
 import random
+from settings import Colors
 
 class Password:
     def __init__(self, length, lower, upper, digit, special):
@@ -39,7 +40,7 @@ class Password:
             for x in password:
                 ready_password += x
 
-            print("Your password: " + ready_password)
+            print(f"{Colors.LIGHT_GREEN}Your password: {Colors.YELLOW}" + ready_password + f"{Colors.END}")
             
         else:
             # Code when password's settings are wrong
